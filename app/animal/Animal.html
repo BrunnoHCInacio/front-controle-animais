@@ -1,0 +1,132 @@
+<div class="page-header">
+    <div class="container-fluid">
+        <h1>
+            Cadastro de Animal
+        </h1>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <form name="formulario" id="form-cadastro-animal" class="form-vertical " ng-submit="salvar()"
+          novalidate>
+
+        <div class="form-group row">
+            <div class="col-sm-4">
+                <label for="codigoRaca">Nome do animal</label>
+                <input id="nomeAnimal" ng-model="form.nomeAnimal" name="nomeAnimal" type="text" class="form-control"
+                       required/>
+            </div>
+            <div class="col-sm-4">
+                <label for="codigoBrinco">Código do colar do animal</label>
+                <input id="codigoBrinco" name="codigoBrinco" ng-model="form.codigoBrinco" type="text"
+                       class="form-control"
+                       required/>
+            </div>
+            <div class="col-sm-4">
+                <label for="codigoRaca">Código da raça</label>
+                <input id="codigoRaca" ng-model="form.codigoRaca" name="codigoRaca" type="text" class="form-control"
+                       required/>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-4">
+                <label for="dataNascimento">Data nascimento</label>
+                <input class="form-control" id="dataNascimento"
+                       name="dataNascimento" type="datetime" ng-model="form.dataNascimento" required/>
+            </div>
+            <div class="col-sm-4">
+                <label for="horaColostragem">hora da colostragem</label>
+                <input class="form-control" id="horaColostragem"
+                       name="horaColostragem" type="datetime" ng-model="form.horaColostragem" required/>
+            </div>
+            <div class="col-sm-2">
+                <label for="fkMae">Nome da mãe</label>
+                <select class="form-control" id="fkMae"
+                        name="fkLote" ng-required="true" data-ng-model="form.fkMae">
+                    <option></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                </select>
+            </div>
+            <div class="col-sm-2">
+                <label for="botaoEnviarMae"> </label>
+                <button id="botaoEnviarMae" type="button"
+                        class="form-control btn btn-primary">
+                    Nova Mae <i class="icon-plus icon-white"></i>
+                </button>
+            </div>
+            <div class="col-sm-2">
+                <label for="fkPai">Nome do pai</label>
+                <select class="form-control" id="fkPai"
+                        name="fkLote" ng-required="true" data-ng-model="form.fkPai">
+                    <option ng-repeat="pai in pais">    </option>
+
+                </select>
+            </div>
+            <div class="col-sm-2">
+                <label for="botaoEnviarPai"> </label>
+                <button id="botaoEnviarPai" type="button"
+                        class="form-control btn btn-primary">
+                    Novo Pai <i class="icon-plus icon-white"></i>
+                </button>
+            </div>
+        </div>
+        <div class="form-group row">
+
+            <div class="col-sm-2">
+                <label for="fkPesagem">Peso ao nascer</label>
+                <select data-ng-model="form.fkPesagem" class="form-control" type="text" id="fkPesagem" name="fkPesagem"
+                        ng-required="true">
+                    <option></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                </select>
+            </div>
+            <div class="col-sm-2">
+                <label for="botaoEnviarPeso"> </label>
+                <button id="botaoEnviarPeso" type="button"
+                        class="form-control btn btn-primary">
+                    Nova Pesagem <i class="icon-plus icon-white"></i>
+                </button>
+            </div>
+            <div class="col-sm-2">
+                <label for="fkLote">Lote</label>
+                <select class="form-control" id="fkLote"
+                        name="fkLote" ng-required="true" data-ng-model="form.fkLote">
+                    <option></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                </select>
+            </div>
+            <div class="col-sm-2">
+                <label for="botaoEnviarLote"> </label>
+                <button id="botaoEnviarLote" type="button"
+                        class="form-control btn btn-primary">
+                    Novo Lote <i class="icon-plus icon-white"></i>
+                </button>
+            </div>
+            <div class="col-sm-2 ">
+                <label for="fkFazenda">Fazenda</label>
+                <select class="form-control" id="fkFazenda"
+                        name="fkFazenda" ng-required="true" data-ng-model="form.fkFazenda">
+                    <option></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                </select>
+            </div>
+            <div class="col-sm-2">
+                <label for="botaoEnviarFazenda"> </label>
+                <button id="botaoEnviarFazenda" type="button"
+                        class="form-control btn btn-primary">
+                    Nova Fazenda <i class="icon-plus icon-white"></i>
+                </button>
+            </div>
+        </div>
+        <div class="form-group">
+            <button class="btn  btn-primary" type="submit">Salvar</button>
+            <a href="#" class="btn  btn-default">Cancelar</a>
+            <a href="#" class="btn  btn-danger">Excluir animal</a>
+        </div>
+
+    </form>
+</div>

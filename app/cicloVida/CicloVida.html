@@ -1,0 +1,48 @@
+<div class="page-header">
+    <div class="container-fluid">
+        <h1>
+            Cadastro de Ciclo de Vida
+        </h1>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <form name="formulario" id="form-cadastro-cicloVida" class="form-vertical " ng-submit="salvar()"
+          novalidate>
+
+
+        <div class="form-group row">
+
+            <div class="col-sm-6">
+                <label for="enumFaseVida">Fase da Vida</label>
+                <select class="form-control" id="enumFaseVida"
+                        name="enumFaseVida" ng-required="true" data-ng-model="form.enumFaseVida">
+                    <option></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                </select>
+            </div>
+
+            <div class="col-sm-6">
+                <label for="enumLocalizacao">Localização</label>
+                <select class="form-control" id="enumLocalizacao"
+                        name="enumLocalizacao" ng-required="true" data-ng-model="form.enumLocalizacao">
+                    <option></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                </select>
+            </div>
+
+        </div>
+        <div class="form-group row">
+
+
+        </div>
+        <div class="form-group">
+            <button class="btn  btn-primary" type="submit">Salvar</button>
+            <a href="#" class="btn  btn-default">Cancelar</a>
+            <a href="#" class="btn  btn-danger">Excluir animal</a>
+        </div>
+
+    </form>
+</div>

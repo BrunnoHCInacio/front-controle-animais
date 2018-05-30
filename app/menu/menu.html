@@ -1,0 +1,208 @@
+<div class="aw-layout-page">
+
+    <nav class="navbar  navbar-fixed-top  navbar-default  js-sticky-reference" id="main-navbar">
+        <div class="container-fluid">
+
+            <div class="navbar-header">
+                <a class="navbar-brand  hidden-xs" href="#">
+                    <!-- <img alt="AlgaWorks" src="assets/images/logo.png"/>      LOGO DA TELA  -->
+                </a>
+
+                <ul class="nav  navbar-nav">
+                    <li>
+                        <a href="#" class="js-sidebar-toggle"><i class="fa  fa-bars"></i></a>
+                    </li>
+                </ul>
+            </div>
+
+            <ul class="nav navbar-nav  navbar-right">
+
+                <li>
+                    <a href="#modal" class="js-search-modal-trigger-show"><i class="fa  fa-search"></i></a>
+                </li>
+
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
+                        <i class="fa  fa-envelope"></i> <span class="label  label-danger  aw-label-corner">48</span>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a href="javascript:;">Item 1</a></li>
+                        <li><a href="javascript:;">Item 2</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa  fa-user"></i>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li>
+                            <div class="aw-logged-user">
+                                <img src="https://api.adorable.io/avatars/80/joaodascouves"
+                                     width="80" height="80" alt="João das Couves" class="aw-logged-user__picture" />
+                                <span class="aw-logged-user__name">João das Couves</span>
+                            </div>
+                        </li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Meu perfil</a></li>
+                        <li><a href="#">Alterar senha</a></li>
+                        <li><a href="#">Pagamentos</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#"><em class="fa  fa-sign-out"></em></a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <aside class="aw-layout-sidebar  js-sidebar">
+        <div class="aw-layout-sidebar__content">
+
+            <nav class="aw-menu  js-menu">
+                <ul class="aw-menu__list">
+
+                    <li class="aw-menu__item">
+                        <a ><i class="fa  fa-fw  fa-home" ui-sref="home"></i>Menu Principal</a>
+                    </li>
+
+                    <li class="aw-menu__item">
+                        <a href="#">
+                            <i class="fa  fa-fw  fa-file-text"></i><span>Fazendas</span>
+                            <i class="aw-menu__navigation-icon  fa"></i>
+                        </a>
+
+                        <ul class="aw-menu__list  aw-menu__list--sublist">
+                            <li class="aw-menu__item  aw-menu__item--link"><a ui-sref="fazendaNovo" >Cadastro de fazenda</a></li>
+                            <li class="aw-menu__item  aw-menu__item--link"><a ui-sref="fazendaListar">Pesquisa de fazendas</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="aw-menu__item ">
+                        <a href="#">
+                            <i class="fa  fa-fw  fa-file-text"></i><span>Animais</span>
+                            <i class="aw-menu__navigation-icon  fa"></i>
+                        </a>
+
+                        <ul class="aw-menu__list  aw-menu__list--sublist">
+                            <li class="aw-menu__item  aw-menu__item--link"><a ui-sref="animalNovo">Cadastro de animais</a></li>
+                            <li class="aw-menu__item  aw-menu__item--link"><a ui-sref="animalListar">Pesquisa de animais</a></li>
+
+                            <li class="aw-menu__item  aw-menu__item--link"><a ui-sref="maeNovo">Cadastro de mães</a></li>
+                            <li class="aw-menu__item  aw-menu__item--link"><a ui-sref="maeEditar">Pesquisa de mães</a></li>
+
+                            <li class="aw-menu__item  aw-menu__item--link"><a ui-sref="paiNovo">Cadastro de pais</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="aw-menu__item">
+                        <a href="#">
+                            <i class="fa  fa-fw  fa-file-text"></i><span>Ciclo de vida</span>
+                            <i class="aw-menu__navigation-icon  fa"></i>
+                        </a>
+
+                        <ul class="aw-menu__list  aw-menu__list--sublist">
+                            <li class="aw-menu__item  aw-menu__item--link"><a ui-sref="cicloVidaNovo" >Cadastro de ciclos</a></li>
+                            <li class="aw-menu__item  aw-menu__item--link"><a ui-sref="cicloVidaListar">Pesquisa de ciclos</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="aw-menu__item">
+                        <a href="#">
+                            <i class="fa  fa-fw  fa-file-text"></i><span>Lote</span>
+                            <i class="aw-menu__navigation-icon  fa"></i>
+                        </a>
+
+                        <ul class="aw-menu__list  aw-menu__list--sublist">
+                            <li class="aw-menu__item  aw-menu__item--link"><a ui-sref="" >Cadastro de lotes</a></li>
+                            <li class="aw-menu__item  aw-menu__item--link"><a ui-sref="">Pesquisa de lotes</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="aw-menu__item">
+                        <a href="#">
+                            <i class="fa  fa-fw  fa-file-text"></i><span>Pesagem</span>
+                            <i class="aw-menu__navigation-icon  fa"></i>
+                        </a>
+
+                        <ul class="aw-menu__list  aw-menu__list--sublist">
+                            <li class="aw-menu__item  aw-menu__item--link"><a ui-sref="pesagemNovo" >Cadastro de pesos</a></li>
+                            <li class="aw-menu__item  aw-menu__item--link"><a ui-sref="">Pesquisa de pesos</a></li>
+                        </ul>
+                    </li>
+
+                    <!--<li class="aw-menu__item  ">-->
+                        <!--<a href="#">-->
+                            <!--<i class="fa  fa-fw  fa-file-text"></i><span>Medicamentos</span>-->
+                            <!--<i class="aw-menu__navigation-icon  fa"></i>-->
+                        <!--</a>-->
+
+                        <!--<ul class="aw-menu__list  aw-menu__list&#45;&#45;sublist">-->
+                            <!--<li class="aw-menu__item  aw-menu__item&#45;&#45;link"><a>Cadastro de medicamentos</a></li>-->
+                            <!--<li class="aw-menu__item  aw-menu__item&#45;&#45;link  "><a>Pesquisa de medicamentos</a></li>-->
+
+                        <!--</ul>-->
+                    <!--</li>-->
+
+                    <!--<li class="aw-menu__item">-->
+                        <!--<a href="#">-->
+                            <!--<i class="fa  fa-fw  fa-file-text"></i><span>Funcionários</span>-->
+                            <!--<i class="aw-menu__navigation-icon  fa"></i>-->
+                        <!--</a>-->
+
+                        <!--<ul class="aw-menu__list  aw-menu__list&#45;&#45;sublist">-->
+                            <!--<li class="aw-menu__item  aw-menu__item&#45;&#45;link"><a  >Cadastro de funcionários</a></li>-->
+                            <!--<li class="aw-menu__item  aw-menu__item&#45;&#45;link  "><a >Pesquisa de funcionários</a></li>-->
+
+                        <!--</ul>-->
+                    <!--</li>-->
+                    <li class="aw-menu__item  ">
+                        <a href="#">
+                            <i class="fa  fa-fw  fa-file-text"></i><span>Laboratório</span>
+                            <i class="aw-menu__navigation-icon  fa"></i>
+                        </a>
+
+                        <ul class="aw-menu__list  aw-menu__list--sublist">
+                            <li class="aw-menu__item  aw-menu__item--link"><a  >PPT</a></li>
+                            <li class="aw-menu__item  aw-menu__item--link "><a ui-sref="hematocritoNovo" >Hematócrito</a></li>
+
+                        </ul>
+                    </li>
+
+                </ul>
+            </nav>
+
+        </div>
+    </aside>
+
+    <section class="aw-layout-content  js-content" id="conteudo">
+        <div id="corpo" data-ui-view></div>
+    </section>
+
+
+    <footer class="aw-layout-footer  js-content">
+        <div class="container-fluid">
+            <span class="aw-footer-disclaimer">&copy; 2017 Samvet. Todos os direitos reservados.</span>
+        </div>
+    </footer>
+
+</div>
+
+<div class="aw-search-modal  js-search-modal" id="modal">
+    <form action="#" class="aw-search-modal__form">
+        <input class="aw-search-modal__input  js-search-modal-input" type="text" placeholder="O que você está procurando?"/>
+        <div class="aw-search-modal__input-icon">
+            <i class="glyphicon  glyphicon-search  js-search-modal-go"></i>
+        </div>
+    </form>
+
+    <div class="aw-search-modal__controls">
+        <i class="glyphicon glyphicon-remove  js-search-modal-close"></i>
+    </div>
+</div>
+<script src="app/assets/javascripts/vendors.min.js"></script>
+<script src="app/assets/javascripts/algaworks.min.js"></script>
